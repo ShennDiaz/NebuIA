@@ -1,0 +1,93 @@
+/*------------------------------------------------------------------
+Theme Name: Colors&Style
+Version: 1.0
+Author: ShnnDR
+-------------------------------------------------------------------*/
+
+/*-----------------Espacios y Cajas---------------------*/
+
+.seccion-page{height: 720px;}
+          @media(max-width: 576px) {.seccion-page{height:auto;}}
+
+.space-70{padding-top: 70px; padding-bottom: 70px;}
+          @media(max-width: 765px) {.space-70-top{padding-top: 70px;}}
+
+.space-70-pop{}
+          @media(max-width: 765px) {.space-70-pop{margin-top: 90px; margin-bottom: 70px;}}
+
+.space-70-block{padding-top: 35px; padding-bottom: 35px;}
+          @media(max-width: 985px) {.space-70-block{padding-top: 40px; padding-bottom: 40px;}}
+
+.space-35{padding-top: 35px; padding-bottom: 35px;}
+          @media(max-width: 765px) {.space-35-top{padding-top: 35px;}}
+
+/*-----------------Tamanño imagenes---------------------*/
+.logo-nav{width: 65px;}
+
+/*-----------------Colores y Degradados---------------------*/
+.dark-bg {
+  background: #252a33; }
+
+.gradiente{
+  background: linear-gradient(to bottom, #1DD2FC,#9859E8);
+  color:#ffffff;}
+
+.deg-blue{  background: -webkit-linear-gradient(left, #08bef0, #0585a8);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text; }
+
+.deg-marine{  background: -webkit-linear-gradient(left, #447ecb, #42229e);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text; }
+
+.deg-purple{  background: -webkit-linear-gradient(left, #8a54d7, #741a9e);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text; }
+
+.deg-blue-purple{  background: -webkit-linear-gradient(left,  #08bef0,  #447ecb, #8a54d7);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text; }
+
+
+
+/*-------------------Herramientas-----------------------*/
+.align-col-middle{display: flex; align-items: center;}
+
+/*-------------------Mov Slider-----------------------*/
+.slider-mov {
+	max-width: 100%;
+  height: auto;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider-mov ul {
+	display: flex;
+	padding: 0;
+	width: 800%;
+
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider-mov li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-mov img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}

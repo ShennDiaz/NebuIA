@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
+  <!-- Icon -->
+    <link rel="icon" type="site/images/Nebula-logos/Nebula-logo.png" href="site/images/Nebula-logos/Nebula-logo.png" />
+    <meta content='site/images/Nebula-logos/Nebula-logo.png' name='msapplication-TileImage'>
+
+
+<link rel="stylesheet" href="site/doc-resources/animations.css">
+
+  <link rel="stylesheet" type="text/css" href="site/doc-resources/main.css">
+  <meta content="{&quot;meta&quot;:{&quot;name&quot;:&quot;Español&quot;,&quot;id&quot;:&quot;es&quot;},&quot;dictionary&quot;:{&quot;verticals&quot;:&quot;Verticales&quot;,&quot;customer&quot;:&quot;Cliente&quot;,&quot;order&quot;:&quot;Orden&quot;,&quot;login&quot;:&quot;Iniciar sesión&quot;,&quot;help&quot;:&quot;Ayuda&quot;,&quot;help_guides&quot;:&quot;Guías de ayuda&quot;,&quot;contact_support&quot;:&quot;Contacta a soporte&quot;,&quot;jobs&quot;:&quot;Bolsa de trabajo&quot;,&quot;about_us&quot;:&quot;Nosotros&quot;,&quot;contact&quot;:&quot;Contacto&quot;,&quot;guide&quot;:&quot;Guía de integración&quot;,&quot;cards_guide&quot;:&quot;Guía de pagos con tarjeta&quot;,&quot;offline_guide&quot;:&quot;Guía de pagos offline&quot;,&quot;install_plugin&quot;:&quot;Instalar plugin&quot;,&quot;download_plugin&quot;:&quot;Descargar plugin&quot;,&quot;download_module&quot;:&quot;Descargar modulo&quot;,&quot;view_github&quot;:&quot;Ver en Github&quot;,&quot;new_solution&quot;:&quot;Nueva Solución (beta)&quot;,&quot;reference&quot;:&quot;Referencia&quot;},&quot;sections&quot;:{&quot;plugins&quot;:&quot;Plugins ecommerce&quot;,&quot;tutorials&quot;:&quot;Tutoriales&quot;,&quot;libraries&quot;:&quot;Bibliotecas de programación&quot;,&quot;resources&quot;:&quot;Recursos&quot;,&quot;api_reference&quot;:&quot;Referencia API&quot;},&quot;home&quot;:{&quot;hero&quot;:{&quot;subtitle&quot;:&quot;Formando el futuro del comercio&quot;,&quot;useit&quot;:&quot;Usa Conekta en minutos&quot;,&quot;explore_more&quot;:&quot;Explora todos los plugins eCommerce&quot;},&quot;plugins&quot;:{&quot;extract&quot;:&quot;Integra uno de los plugins disponibles para plataformas de eCommerce&quot;,&quot;action&quot;:&quot;Explorar plugins&quot;},&quot;tutorials&quot;:{&quot;extract&quot;:&quot;Elige un tutorial o método de integración para empezar.&quot;,&quot;action&quot;:&quot;Ver tutoriales&quot;},&quot;libraries&quot;:{&quot;extract&quot;:&quot;Elige el lenguaje de programación que deseas usar&quot;,&quot;action&quot;:&quot;Explorar librerias&quot;},&quot;api_reference&quot;:{&quot;extract&quot;:&quot;Encuentra la información de todas las llamadas, respuestas y errores que podrás utilizar con nuestro API.\n&quot;,&quot;action&quot;:&quot;Referencia&quot;}},&quot;plugins&quot;:{&quot;versions&quot;:&quot;{versions} o inferior&quot;,&quot;subtitle&quot;:&quot;Integra uno de los plugins disponibles para plataformas de eCommerce\n&quot;,&quot;official&quot;:{&quot;title&quot;:&quot;Plugins oficiales&quot;,&quot;subtitle&quot;:&quot;Módulos oficiales con soporte de Conekta\n&quot;},&quot;community&quot;:{&quot;title&quot;:&quot;Plugins comunitarios&quot;,&quot;subtitle&quot;:&quot;Módulos no-oficiales sin soporte de Conekta&quot;},&quot;shopify&quot;:{&quot;extract&quot;:&quot;Crea una tienda en línea en minutos y sin ningún conocimiento técnico\n&quot;,&quot;open&quot;:&quot;Abre tu tienda Shopify&quot;},&quot;woocommerce&quot;:{&quot;extract&quot;:&quot;Crea una tienda en línea dentro de un sitio existente de WordPress\n&quot;},&quot;prestashop&quot;:{&quot;extract&quot;:&quot;Crea una tienda en línea PrestaShop y vende productos físicos y digitales\n&quot;},&quot;checkfront&quot;:{&quot;open&quot;:&quot;Abre una cuenta en Checkfront&quot;},&quot;gospaces&quot;:{&quot;open&quot;:&quot;Abre una cuenta en GoSpaces&quot;},&quot;spincommerce&quot;:{&quot;open&quot;:&quot;Abre una cuenta en Spincommerce&quot;},&quot;shoperti&quot;:{&quot;open&quot;:&quot;Abre una cuenta en Shoperti&quot;},&quot;kometia&quot;:{&quot;open&quot;:&quot;Abre una cuenta en Kometia&quot;}},&quot;community&quot;:{&quot;subtitle&quot;:&quot;Envia tus contribuciones a&quot;,&quot;author&quot;:&quot;por&quot;},&quot;tutorials&quot;:{&quot;subtitle&quot;:&quot;Aprende a integrar nuestra solución de pagos a tu ecommerce.&quot;,&quot;goto&quot;:&quot;Ver tutorial&quot;,&quot;cards&quot;:{&quot;title&quot;:&quot;Cargo único y Meses Sin Intereses&quot;,&quot;extract&quot;:&quot;Genera una tokenización por cada checkout, sin  crear un cliente por pago.\n&quot;},&quot;oxxo_pay&quot;:{&quot;title&quot;:&quot;Pagos con OXXO PAY&quot;,&quot;extract&quot;:&quot;Recibe pagos en efectivo con notificación en tiempo real.&quot;},&quot;charge_on_demand&quot;:{&quot;title&quot;:&quot;Cargo por solicitud&quot;,&quot;extract&quot;:&quot;Tokeniza las tarjetas para generar cargos a tus clientes cada vez que ellos lo necesiten.\n&quot;},&quot;spei&quot;:{&quot;title&quot;:&quot;Pagos vía SPEI&quot;,&quot;extract&quot;:&quot;Habilita transferencias interbancarias.&quot;},&quot;subscriptions&quot;:{&quot;title&quot;:&quot;Suscripciones con tarjetas&quot;,&quot;extract&quot;:&quot;Añade pagos por suscripción con tarjetas de crédito y/o débito.\n&quot;}},&quot;libraries&quot;:{&quot;subtitle&quot;:&quot;Elige el lenguaje de programación que deseas usar&quot;,&quot;tokenization&quot;:{&quot;title&quot;:&quot;Bibliotecas de tokenización&quot;,&quot;subtitle&quot;:&quot;Librerías para encriptar datos de tarjetas\n&quot;},&quot;backend&quot;:{&quot;title&quot;:&quot;Bibliotecas de pagos&quot;,&quot;subtitle&quot;:&quot;Librerías para transaccionar con nuestra API.\n&quot;},&quot;community&quot;:{&quot;title&quot;:&quot;Bibliotecas comunitarias&quot;}},&quot;resources&quot;:{&quot;testing&quot;:{&quot;title&quot;:&quot;Pruebas en desarrollo&quot;},&quot;webhooks&quot;:{&quot;title&quot;:&quot;Configuración de webhooks&quot;}},&quot;guide&quot;:{&quot;steps&quot;:&quot;Pasos&quot;,&quot;knowledges&quot;:&quot;Conocimientos necesarios&quot;,&quot;integration_time&quot;:&quot;Tiempo promedio de integración&quot;,&quot;reminders&quot;:&quot;Recuerda contar con lo siguiente&quot;,&quot;limits&quot;:&quot;Limites&quot;,&quot;compatibility&quot;:&quot;Compatibilidad&quot;},&quot;errors&quot;:{&quot;404&quot;:{&quot;title&quot;:&quot;Página No Encontrada&quot;,&quot;text&quot;:&quot;Lo sentimos, la página que estas buscando no existe&quot;},&quot;500&quot;:{&quot;title&quot;:&quot;Error Interno del Servidor&quot;,&quot;text&quot;:&quot;Algo salió mal, estamos trabajando para solucionarlo&quot;},&quot;report_problem&quot;:&quot;Reportar problema&quot;,&quot;go_home&quot;:&quot;Regresar al incio&quot;},&quot;api&quot;:{&quot;submodels&quot;:{&quot;show&quot;:&quot;Mostrar&quot;,&quot;hide&quot;:&quot;Ocultar&quot;,&quot;text&quot;:&quot;submodelos&quot;},&quot;versioning&quot;:&quot;Versiones&quot;,&quot;locale&quot;:&quot;Idioma&quot;,&quot;events&quot;:&quot;Eventos&quot;,&quot;errors&quot;:&quot;Errores&quot;,&quot;orders&quot;:{&quot;title&quot;:&quot;Órdenes&quot;,&quot;create&quot;:&quot;Crear orden&quot;,&quot;update&quot;:&quot;Actualizar orden&quot;,&quot;capture&quot;:&quot;Capturar orden&quot;,&quot;refund&quot;:&quot;Reembolsar orden&quot;},&quot;customers&quot;:{&quot;title&quot;:&quot;Clientes&quot;,&quot;create&quot;:&quot;Crear Cliente&quot;,&quot;update&quot;:&quot;Actualizar Cliente&quot;,&quot;delete&quot;:&quot;Eliminar Cliente&quot;},&quot;subscriptions&quot;:{&quot;title&quot;:&quot;Suscripciones&quot;,&quot;create&quot;:&quot;Crear suscripción&quot;,&quot;update&quot;:&quot;Actualizar suscripción&quot;,&quot;pause&quot;:&quot;Pausar suscripción&quot;,&quot;resume&quot;:&quot;Reanudar Suscripción&quot;,&quot;cancel&quot;:&quot;Cancelar Suscripción&quot;},&quot;plans&quot;:{&quot;title&quot;:&quot;Planes&quot;,&quot;create&quot;:&quot;Crear plan&quot;,&quot;update&quot;:&quot;Actualizar plan&quot;,&quot;delete&quot;:&quot;Eliminar plan&quot;},&quot;pagination&quot;:{&quot;title&quot;:&quot;Paginación&quot;,&quot;next&quot;:&quot;Siguiente&quot;,&quot;previous&quot;:&quot;Anterior&quot;},&quot;payment_sources&quot;:{&quot;title&quot;:&quot;Métodos de Pago&quot;,&quot;create&quot;:&quot;Crear Método de Pago&quot;,&quot;update&quot;:&quot;Actualizar Método de Pago&quot;,&quot;delete&quot;:&quot;Eliminar Método de Pago&quot;},&quot;line_items&quot;:{&quot;title&quot;:&quot;Productos&quot;,&quot;create&quot;:&quot;Crear Producto&quot;,&quot;update&quot;:&quot;Actualizar Producto&quot;,&quot;delete&quot;:&quot;Eliminar Producto&quot;},&quot;shipping_lines&quot;:{&quot;title&quot;:&quot;Envios&quot;,&quot;create&quot;:&quot;Crear Envío&quot;,&quot;update&quot;:&quot;Actualizar Envío&quot;,&quot;delete&quot;:&quot;Eliminar Envío&quot;},&quot;shipping_contacts&quot;:{&quot;title&quot;:&quot;Contactos de Envío&quot;,&quot;create&quot;:&quot;Crear Contacto de Envío&quot;,&quot;update&quot;:&quot;Actualizar Contacto de Envío&quot;,&quot;delete&quot;:&quot;Eliminar Contacto de Envío&quot;},&quot;discount_lines&quot;:{&quot;title&quot;:&quot;Descuentos&quot;,&quot;create&quot;:&quot;Crear Descuento&quot;,&quot;update&quot;:&quot;Actualizar Descuento&quot;,&quot;delete&quot;:&quot;Eliminar Descuento&quot;},&quot;tax_lines&quot;:{&quot;title&quot;:&quot;Impuestos&quot;,&quot;create&quot;:&quot;Crear Impuesto&quot;,&quot;update&quot;:&quot;Actualizar Impuesto&quot;,&quot;delete&quot;:&quot;Eliminar Impuesto&quot;},&quot;charge&quot;:{&quot;title&quot;:&quot;Cargos&quot;,&quot;create&quot;:&quot;Crear cargo&quot;}},&quot;verticals&quot;:{&quot;retail&quot;:&quot;Retail&quot;,&quot;transportation&quot;:&quot;Transporte&quot;,&quot;travel&quot;:&quot;Viajes&quot;,&quot;event&quot;:&quot;Eventos&quot;,&quot;telecom&quot;:&quot;Telecomunicaciones&quot;,&quot;crowdfunding&quot;:&quot;Crowdfunding&quot;
+  ,&quot;id-eng-1&quot;:&quot;id-eng-1&quot;
+  ,&quot;id-eng-2&quot;:&quot;id-eng-2&quot;
+  ,&quot;id-eng-3&quot;:&quot;id-eng-3&quot;
+  ,&quot;id-eng-4&quot;:&quot;id-eng-4&quot;
+  }}" id="strings">
+
+  <link rel="stylesheet" href="site/doc-resources/api.css">
+
+</head>
+
+<body class="api body-header-sticky">
+  <main id='main'>
+
+  <div class="header header-sticky header-white header-full">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <a href="https://nebuia.com/" class="header-brand" title='Nebuia' style="font-weight: 300;font-size: 35px;">
+
+            <img src="site/images/Nebula-logos/Nebula-logo.png" alt="Conekta">
+            Nebuia
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="api-languages-wrapper">
+      <div class="api-languages"></div>
+    </div>
+
+</div>
+
+
+  <div class="api-sidebar">
+    <div class="topics">
+
+  <div class="topics-item">
+    <a href="#id-eng-1" title="Authentication">
+      <img src="site/images/icon/tik.svg" alt="" style="max-width: 13px; margin-right: 7px;">Authentication 
+    </a>
+  </div>
+  <div class="topics-item">
+    <a href="#id-eng-2" title="Users">
+      <img src="site/images/icon/tik.svg" alt="" style="max-width: 13px; margin-right: 7px;">Users 
+    </a>
+  </div>
+  <div class="topics-item">
+    <a href="#id-eng-3" title="Services">
+    <img src="site/images/icon/tik.svg" alt="" style="max-width: 13px; margin-right: 7px;">Services
+    </a>
+  </div>
+  <div class="topics-item">
+    <a href="#id-eng-4" title="OIDC Authentication">
+    <img src="site/images/icon/tik.svg" alt="" style="max-width: 13px; margin-right: 7px;">OIDC Authentication 
+    </a>
+  </div>
+</div>
+  </div>
+  <div class="api-wrapper">
+    <div class="background blue-pattern-bg"></div>
+    <div class="api-content">
+
+<!--Title1--------------------------------------------------------------------->
+      <h2 id="id-eng-1" class="deg-blue-purple">Authentication</h2>
+<!--Code1-->
+      <div style="display: none;" class="exampler dark">
+        <pre>
+          <code class="lang-bash">
+            Body
+
+                {
+                  “email”: “ ”,
+                  “password”: “ ”,
+                  “company”: “ ”
+                }
+
+            Headers
+
+                  api_key: “ ”
+                  api_secret: “ ”
+
+            Response
+
+                  {
+                    “token”: “ ”,
+                    “expiresIn”: “ ”
+                  }
+        </code></pre>
+      </div>
+<!--Des1-->
+      <p>Nebula API access is protected by using Bearer authentication.</p>
+<!--Tab1-->
+      <div class="cell-params-container">
+        <div class="cell-params-container-table">
+          <div class="cell-params-row">
+            <div class="cell-params-column-left">
+              <div class="cell-params-name"><strong>Endpoint</strong></div>
+              <div class="cell-params-description">/company/auth</div>
+            </div>
+            <div class="cell-params-column-right">
+                <div class="cell-params-name"><strong>HTTP Method </strong></div>
+                <div class="cell-params-description">POST</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--Title2--------------------------------------------------------------------->
+      <h2 id="id-eng-2" class="deg-blue-purple">Users</h2>
+<!--Des2.1-->
+      <h5 class="ssh-submenu">Nebula user prefix</h5>
+<!--Tab2.1-->
+      <div class="cell-params-container">
+        <div class="cell-params-container-table">
+          <div class="cell-params-row">
+            <div class="cell-params-column-left">
+              <div class="cell-params-name"><strong>Endpoint</strong></div>
+              <div class="cell-params-description">/users/</div>
+            </div>
+            <div class="cell-params-column-right">
+                <div class="cell-params-name"><strong>HTTP Method</strong></div>
+                <div class="cell-params-description">POST/PUT/GET</div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--Des2.1-->
+      <h4 class="ssh-submenu">User methods </h4>
+      <h5 class="ssh-submenu">Headers</h5>
+      <p>Authentication: Bearer + token </p>
+<!--Tab2.2-->
+      <div class="cell-params-container">
+        <div class="cell-params-container-table">
+          <div class="cell-params-row">
+            <div class="cell-params-column-new"style="margin-right:10px;">
+              <div class="cell-params-name" style="text-align: left;"><strong>Method</strong></div>
+              <div class="cell-params-description"style="text-align: left;">/create</div>
+              <div class="cell-params-description"style="text-align: left;">/</div>
+              <div class="cell-params-description"style="text-align: left;">/face</div>
+              <div class="cell-params-description"style="text-align: left;">/valid_face</div>
+              <div class="cell-params-description"style="text-align: left;">/document</div>
+            </div>
+            <div class="cell-params-column-new"style="margin-right:10px;">
+                <div class="cell-params-name"style="text-align: left;"><strong>Type</strong></div>
+                <div class="cell-params-description"style="text-align: left;">GET</div>
+                <div class="cell-params-description"style="text-align: left;">GET</div>
+                <div class="cell-params-description"style="text-align: left;">POST</div>
+                <div class="cell-params-description"style="text-align: left;">POST</div>
+                <div class="cell-params-description"style="text-align: left;">GET</div>
+            </div>
+            <div class="cell-params-column-new"style="margin-right:10px;">
+                <div class="cell-params-name"style="text-align: left;"><strong>Query</strong></div>
+                <div class="cell-params-description"style="text-align: left;">None</div>
+                <div class="cell-params-description"style="text-align: left;">uuid</div>
+                <div class="cell-params-description"style="text-align: left;">uuid</div>
+                <div class="cell-params-description"style="text-align: left;">uuid</div>
+                <div class="cell-params-description"style="text-align: left;">uuid&key</div>
+            </div>
+            <div class="cell-params-column-new"style="margin-right:10px;">
+                <div class="cell-params-name"style="text-align: left;"><strong>Description</strong></div>
+                <div class="cell-params-description"style="text-align: left;">Create new user and return uuid for future request</div>
+                <div class="cell-params-description"style="text-align: left;">Get user data </div>
+                <div class="cell-params-description"style="text-align: left;">Register face of user </div>
+                <div class="cell-params-description"style="text-align: left;">Face validation</div>
+                <div class="cell-params-description"style="text-align: left;">Return document verification by key </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--Title3--------------------------------------------------------------------->
+      <h2 id="id-eng-3" class="deg-blue-purple">Services</h2>
+<!--Code3-->
+      <div style="display: none;" class="exampler dark">
+        <pre>
+          <code class="lang-bash">
+            Body
+                {
+                value in table
+                }
+            Headers
+                Authentication: Bearer + token
+
+            Query
+                uuid=user_uuid
+        </code></pre>
+      </div>
+<!--Des3.1-->
+      <p>All services can be consumed through rest services and native android / ios libraries, the use case for rest services is described below. </p>
+<!--Tab3-->
+      <div class="cell-params-container">
+        <div class="cell-params-container-table">
+          <div class="cell-params-row">
+            <div class="cell-params-column-new">
+              <div class="cell-params-name" style="text-align: left;"><strong>Method</strong></div>
+              <div class="cell-params-description"style="text-align: left;">/document</div>
+              <div class="cell-params-description"style="text-align: left;">/emotions</div>
+              <div class="cell-params-description"style="text-align: left;">/face</div>
+              <div class="cell-params-description"style="text-align: left;">/valid_face</div>
+              <div class="cell-params-description"style="text-align: left;">/oidc</div>
+            </div>
+            <div class="cell-params-column-new">
+                <div class="cell-params-name"style="text-align: left;"><strong>Type</strong></div>
+                <div class="cell-params-description"style="text-align: left;">POST</div>
+                <div class="cell-params-description"style="text-align: left;">POST</div>
+                <div class="cell-params-description"style="text-align: left;">POST</div>
+                <div class="cell-params-description"style="text-align: left;">POST</div>
+                <div class="cell-params-description"style="text-align: left;">GET</div>
+            </div>
+            <div class="cell-params-column-new">
+                <div class="cell-params-name"style="text-align: left;"><strong>Body</strong></div>
+                <div class="cell-params-description"style="text-align: left;">front;back</div>
+                <div class="cell-params-description"style="text-align: left;">face</div>
+                <div class="cell-params-description"style="text-align: left;">face</div>
+                <div class="cell-params-description"style="text-align: left;">face</div>
+                <div class="cell-params-description"style="text-align: left;"> </div>
+            </div>
+            <div class="cell-params-column-new">
+                <div class="cell-params-name"style="text-align: left;"><strong>Description</strong></div>
+                <div class="cell-params-description"style="text-align: left;">Send document images as b64 </div>
+                <div class="cell-params-description"style="text-align: left;">Send face image as b64 </div>
+                <div class="cell-params-description"style="text-align: left;">Send face image as b64 </div>
+                <div class="cell-params-description"style="text-align: left;">Send face image as b64 </div>
+                <div class="cell-params-description"style="text-align: left;">Return SSO service pages</div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--Des3.2-->
+      <h5 class="ssh-submenu">Notes</h5>
+      <p><strong>Proof of life​</strong> requires native implementation on your app, there are native implementations on IOS / Android and hybrid on flutter </p>
+      <p><a href="​https://github.com/xellDart/NebulaID-Flutter">Flutter implementation</a>
+      <br><a href="https://github.com/xellDart/NebulaID-​Android">Android implementation</a>
+      <br><a href="​https://github.com/xellDart/NebulaID-​IOS">IOS implementation</a>
+      <br><a href="​https://github.com/xellDart/NebulaID-​ReactNative">React native implementation</a>
+      <br> <a href="https://github.com/xellDart/NebulaID-​Reactjsx">React implementation</a>
+      </p>
+
+<!--Title4--------------------------------------------------------------------->
+      <h2 id="id-eng-4" class="deg-blue-purple">OIDC Authentication</h2>
+<!--Des4.1-->
+      <p>The request for user authentication has the following components.</p>
+<!--Tab4.1-->
+      <div class="cell-params-container">
+        <div class="cell-params-container-table">
+          <div class="cell-params-row">
+            <div class="cell-params-column-left">
+              <div class="cell-params-name"><strong>Endpoint</strong></div>
+              <div class="cell-params-description">/oidc</div>
+            </div>
+            <div class="cell-params-column-right">
+                <div class="cell-params-name"><strong>HTTP Method </strong></div>
+                <div class="cell-params-description">GET</div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--Des4.2-->
+      <h5 class="ssh-submenu">Query params</h5>
+<!--Tab4.2-->
+      <div class="cell-params-container">
+        <div class="cell-params-container-table">
+          <div class="cell-params-row">
+            <div class="cell-params-column-new" style="margin-right:10px;">
+              <div class="cell-params-name" style="text-align: left;"><strong>Name</strong></div>
+              <div class="cell-params-description"style="text-align: left;">client_id</div>
+              <div class="cell-params-description"style="text-align: left;">response_type</div>
+              <div class="cell-params-description"style="text-align: left;">scope</div>
+              <div class="cell-params-description"style="text-align: left;"><br>nonce</div>
+            </div>
+            <div class="cell-params-column-new" style="margin-right:10px;">
+                <div class="cell-params-name"style="text-align: left;"><strong>Type</strong></div>
+                <div class="cell-params-description"style="text-align: left;">String</div>
+                <div class="cell-params-description"style="text-align: left;"><br>String</div>
+                <div class="cell-params-description"style="text-align: left;"><br>String</div>
+            </div>
+            <div class="cell-params-column-new" style="width:360px;margin-right:10px;">
+                <div class="cell-params-name"style="text-align: left;"><strong>Description</strong></div>
+                <div class="cell-params-description"style="text-align: left;">Client id</div>
+                <div class="cell-params-description"style="text-align: left;">id_token token on every request</div>
+                <div class="cell-params-description"style="text-align: left;">Some information about the end user. Eg : Name, address, birth date, emailr and etc.</div>
+                <div class="cell-params-description"style="text-align: left;">Value used to associate a Client session with an ID Token, and to mitigate replay attacks.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--Des4.3-->
+      <h5 class="ssh-submenu">cope:</h5>
+      <ul style="line-height: 15px;">
+        <li>openid</li>
+        <li>email</li>
+        <li>phone</li>
+        <li>profile</li>
+      </ul>
+      <h5 class="ssh-submenu">id_token contains:</h5>
+      <ul style="line-height: 15px;">
+        <li>iss — Issuing authority.</li>
+        <li>sub — A unique identifier for the end user issued by issuer.</li>
+        <li>aud — Audience this ID_Token is intended for. This must contain the client_ID of the RP. </li>
+        <li>exp — After what time the ID_Token should not accepted.</li>
+        <li>iat — Time that token is issued.</li>
+        <li>auth_time — Time when the end user authentication occurred.</li>
+      </ul>
+      <p>iss, sub, aud, exp and iat are required parameters in the id_token. Other than these parameters there can be other optional parameters as well.
+        <br>When an user request GET petition to oidc endpoint, this will be redirected to a login window with a session id:
+      </p>
+      <img src="site/images/page/comp2.png" alt="" style="height: 300px;padding-left: 55px;">
+      <p>Sample of url request:</p>
+      <p style="color:#b25ed4;">http://domai/auth?client_id=​test_client_app​&redirect_uri=​https://testapp/signinoidc​&response_type=i​d_token token​&scope=​openid profile​&nonce=​foobar </p>
+      <p>When an email exist or is valid, a waiting window will be displayed with user interaction.</p>
+      <p>If the request is valid, authorization server tries to authenticate the end users. But there are some cases where the authorization server must not try to authenticate users.</p>
+      <p>Must try to authenticate:</p>
+        <ul><li>If user is not already authenticated. </li></ul>
+      <p>When the user accepts or rejects the request (the user decides what information to share), the client's URL will be automatically re-redirected with the result in the form of query values </p>
+      <p style="color:#b25ed4;">https://sample.url/oauth</p>
+      <h6 class="ssh-submenu">If the user request is ok:</h6>
+<!--Tab4.3-->
+      <div class="cell-params-container">
+        <div class="cell-params-container-table">
+          <div class="cell-params-row">
+            <div class="cell-params-column-new">
+              <div class="cell-params-name" style="text-align: left;"><strong>Name</strong></div>
+              <div class="cell-params-description"style="text-align: left;">id_token</div>
+              <div class="cell-params-description"style="text-align: left;">access_token</div>
+              <div class="cell-params-description"style="text-align: left;">expires_in</div>
+              <div class="cell-params-description"style="text-align: left;">...</div>
+            </div>
+            <div class="cell-params-column-new">
+                <div class="cell-params-name"style="text-align: left;"><strong>Type</strong></div>
+                <div class="cell-params-description"style="text-align: left;">String</div>
+                <div class="cell-params-description"style="text-align: left;">String</div>
+                <div class="cell-params-description"style="text-align: left;">String</div>
+                <div class="cell-params-description"style="text-align: left;">String</div>
+            </div>
+            <div class="cell-params-column-new">
+                <div class="cell-params-name"style="text-align: left;"><strong>Description</strong></div>
+                <div class="cell-params-description"style="text-align: left;">User token</div>
+                <div class="cell-params-description"style="text-align: left;">Token from client to access user information</div>
+                <div class="cell-params-description"style="text-align: left;">Token expiration time</div>
+                <div class="cell-params-description"style="text-align: left;">Other values</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h6 class="ssh-submenu">If the user request is not ok:</h6>
+<!--Tab4.4-->
+      <div class="cell-params-container">
+        <div class="cell-params-container-table">
+          <div class="cell-params-row">
+            <div class="cell-params-column-new">
+              <div class="cell-params-name" style="text-align: left;"><strong>Name</strong></div>
+              <div class="cell-params-description"style="text-align: left;">error</div>
+              <div class="cell-params-description"style="text-align: left;">error_descripti on </div>
+            </div>
+            <div class="cell-params-column-new">
+                <div class="cell-params-name"style="text-align: left;"><strong>Type</strong></div>
+                <div class="cell-params-description"style="text-align: left;">String</div>
+                <div class="cell-params-description"style="text-align: left;">String</div>
+            </div>
+            <div class="cell-params-column-new">
+                <div class="cell-params-name"style="text-align: left;"><strong>Description</strong></div>
+                <div class="cell-params-description"style="text-align: left;">Principal error</div>
+                <div class="cell-params-description"style="text-align: left;">Description of error </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>NEBULA-OIDC remember user, if an user is already authenticate, the previous process is no longer necessary and will be re-redirected automatically</p>
+      <h6 class="ssh-submenu">GET USER DATA</h6>
+<!--Tab4.5-->
+      <div class="cell-params-container">
+        <div class="cell-params-container-table">
+          <div class="cell-params-row">
+            <div class="cell-params-column-left">
+              <div class="cell-params-name"><strong>Endpoint</strong></div>
+              <div class="cell-params-description">/me</div>
+            </div>
+            <div class="cell-params-column-right">
+                <div class="cell-params-name"><strong>HTTP Method </strong></div>
+                <div class="cell-params-description">POST</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h6 class="ssh-submenu">Header Params </h6>
+<!--Tab4.6-->
+      <div class="cell-params-container">
+        <div class="cell-params-container-table">
+          <div class="cell-params-row">
+            <div class="cell-params-column-new">
+              <div class="cell-params-name" style="text-align: left;"><strong>Name</strong></div>
+              <div class="cell-params-description"style="text-align: left;">Authorization</div>
+            </div>
+            <div class="cell-params-column-new">
+                <div class="cell-params-name"style="text-align: left;"><strong>Type</strong></div>
+                <div class="cell-params-description"style="text-align: left;">Bearer</div>
+            </div>
+            <div class="cell-params-column-new">
+                <div class="cell-params-name"style="text-align: left;"><strong>Description</strong></div>
+                <div class="cell-params-description"style="text-align: left;">Access token generated in OIDC Process</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--STOP! //////////////////--->
+    </div>
+  </div>
+
+  </main>
+  <script type="text/javascript" src='site/doc-resources/commons.js' data-manual></script>
+  <script type="text/javascript" src='site/doc-resources/main.js' data-manual></script>
+  <script type="text/javascript" src='site/doc-resources/api.js'></script>
+
+</body>
+</html>

@@ -1,0 +1,553 @@
+﻿<?php
+session_start();
+$_lang="en";
+if (isset($_GET["lang"]))
+{
+  $_lang = $_GET["lang"];
+}
+setcookie("lang", $_lang, time() + 31104000, "/");
+
+require "lang/".$_lang.".php";
+?>
+
+
+<!---INDEX------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <!-- Page Title -->
+    <title>Nebuia</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="icon" type="site/images/Nebula-logos/Nebula-logo.png" href="site/images/Nebula-logos/Nebula-logo.png" />
+    <meta content='site/images/Nebula-logos/Nebula-logo.png' name='msapplication-TileImage'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="site/css/bootstrap.min.css">
+    <!-- Simple line Icon -->
+    <link rel="stylesheet" href="site/css/simple-line-icons.css">
+    <!-- Themify Icon -->
+    <link rel="stylesheet" href="site/css/themify-icons.css">
+    <!-- Hover Effects -->
+    <link rel="stylesheet" href="site/css/set1.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="site/css/shh.css">
+    <link rel="stylesheet" href="site/css/style.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="site/css/animations.css">
+</head>
+
+<body>
+<!--============================= HEADER (MENU) =============================-->
+    <div class="nav-menu">
+        <div class="bg transition">
+            <div class="container-fluid fixed">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg navbar-light" style="padding-right: 30px; padding-left:30px;">
+                             <div class="align-col-middle">
+                                  <img class="logo-nav" src="site/images/Nebula-logos/Nebula-logo.png">
+                                  <h3 class="nav-link" style="color:white; white-space: nowrap;">Nebuia</h3>
+                              </div>
+
+                                <button class="navbar-toggler collapsed" style="float:right;" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="icon-menu"></span>
+                                </button>
+
+                              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="flex-basis: 85%;">
+                                <ul class="navbar-nav">
+                                  <li><a href="#"><img src="site/images/icon/appstore.png" style="max-width:180px; height:auto; padding:10px 20px;" alt=""></a></li>
+                                  <li><a href="#"><img src="site/images/icon/playstore.png" style="max-width:180px; height:auto; padding:10px 20px;" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--============================= BANNER=============================-->
+    <!--la imagen esta dentro de la clase Slider-->
+    <section class="slider d-flex align-items-center" >
+        <div class="container">
+            <div class="row wow have-padding slow align-items-center"  style="padding-top:50px;" >
+                <div class="col-sm-6">
+            <!---Titulo-->
+                      <div class="row">
+                          <div class="col-md-12">
+                                      <h1  class="special-title wow  fadeIn have-padding" style="color: #ffffff; text-align:left; margin-bottom: 20px; align-items:center;">Digital Identification Kit</h1>
+                                  <div  class="special-text wow  fadeIn have-padding" style="color: #c4c4c4; text-align:justify; align-items:center;">
+                                          Includes everything you need for UI and UX part of your financial (fintech) service, banking app, budget planner, crypto wallet and any other SAAS application.
+                                  </div>
+                            <!---Boton-->
+                                  <div class="wow  bounceIn have-padding slow" data-wow-delay="1s" style="float:left; margin-top:30px;">
+                                        <h2 href="#" class="special-button btn btn-outline-light top-btn" style="background-color:#1DD2FC; font-weight: bolder;">Try Now!</h2>
+                                  </div>
+                          </div>
+                      </div>
+                </div>
+          <!---Imagen-->
+                <div class="col-sm-6">
+                      <img  src="site/images/page/p-hero2.png" class="special-img img-fluid wow  fadeIn have-padding" alt="img13" />
+                </div>
+           </div>
+           <div class="row justify-content-center"style="align-items:center;">
+               <div class="col-md-12 wow animated fadeInUp" style="text-align:center;">
+                   <div>
+                       <h6 style="color:rgb(196, 196, 196);" >Our most important clients</h6>
+                   </div>
+               </div>
+           </div>
+           <div class="row">
+
+               <div class="col-md-3 category-responsive wow animated fadeIn  delay-1s align-col-middle">
+                 <div class="row find-img-align"  style="margin:5px; align-items:center">
+                     <figure>
+                             <!--ALLIANCE1--->
+                             <img src="site/images/icon/apoint.svg" class="img-fluid" alt="img13"/>
+                     </figure>
+                 </div>
+               </div>
+               <div class="col-md-3 category-responsive wow animated fadeIn  delay-2s align-col-middle">
+                 <div class="row find-img-align"  style="margin:5px; align-items:center">
+                     <figure>
+                             <!--ALLIANCE2--->
+                             <img src="site/images/icon/icao.svg" class="img-fluid" alt="img13"/>
+                     </figure>
+                 </div>
+               </div>
+               <div class="col-md-3 category-responsive wow animated fadeIn  delay-3s align-col-middle">
+                 <div class="row find-img-align"  style="margin:5px; align-items:center">
+                     <figure>
+                             <!--ALLIANCE3--->
+                             <img src="site/images/icon/sovrin.svg" class="img-fluid" alt="img13"/>
+                     </figure>
+                 </div>
+               </div>
+               <div class="col-md-3 category-responsive wow animated fadeIn  delay-4s align-col-middle">
+                 <div class="row find-img-align"  style="margin:5px; align-items:center">
+                     <figure>
+                             <!--ALLIANCE4--->
+                             <img src="site/images/icon/coparmex.svg" class="img-fluid" alt="img13"/>
+                     </figure>
+                 </div>
+               </div>
+
+          </div>
+       </div>
+    </section>
+<!--=============================END HEADER ==================================-->
+<!--============================= Features =============================-->
+<section class="main-block"style="background: linear-gradient(0.25turn, #f4f1f1, #d7d4d4);" >
+  <div class="container">
+    <div class="row seccion-page  align-items-center">
+      <!---img1----->
+      <div class="space-70 col-sm-4 wow  fadeIn have-padding " data-wow-delay="0.7s" >
+        <div class="row find-img-align ">
+            <div class="col-md-12">
+                <div class="find-place-img_wrap">
+                    <div class="grid" style="padding: 1em 0 1em;">
+        <img src="site/images/icon/selfie.png" class="img-icon img-fluid" alt="img13" style="max-width: 55%;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+              <div class="row">
+                  <div class="col-md-12 " style="text-align:justify;">
+                    <div class="find-place-img_wrap">
+                        <div class="grid" >
+                        <h3>Onboard More Customers</h3>
+                        <p  class="deg-blue" style="margin-top:30px;">Dramatically reduce abandonment rates with an automated, highly accurate and user-friendly identity verification solution.</p>
+                          </div>
+                            </div>
+                  </div>
+              </div>
+      </div>
+      <!---img2----->
+      <div class="space-70 col-sm-4 wow  fadeIn have-padding" data-wow-delay="0.8s">
+        <div class="row find-img-align">
+            <div class="col-md-12">
+                <div class="find-place-img_wrap">
+                    <div class="grid" style="padding: 1em 0 1em;">
+        <img src="site/images/icon/escudo.png" class="img-icon img-fluid" style="max-width: 55%;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+              <div class="row">
+                  <div class="col-md-12 " style="text-align:justify;">
+                    <div class="find-place-img_wrap">
+                        <div class="grid" >
+                        <h3>Stop Fraud from the Start</h3>
+                        <p class="deg-marine" style="margin-top:30px;">Shield your business and your online ecosystem from the risks of identity fraud and financial crime while building trust in your online channel.</p>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+      </div>
+      <!---img3----->
+      <div class="space-70 col-sm-4 wow  fadeIn have-padding" data-wow-delay="0.9s">
+        <div class="row find-img-align">
+            <div class="col-md-12">
+                <div class="find-place-img_wrap">
+                    <div class="grid" style="padding: 1em 0 1em;">
+        <img src="site/images/icon/money.png" class="img-icon img-fluid" style="max-width: 55%;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+              <div class="row">
+                  <div class="col-md-12 " style="text-align:justify;">
+                    <div class="find-place-img_wrap">
+                        <div class="grid">
+                        <h3>Simplify KYC</h3>
+                        <h3>and AML</h3>
+                        <p class="deg-purple" style="margin-top:30px;">Meet strict compliance requirements for age and identity verification, account authentication, data privacy and KYC/AML.</p>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=============================     Space      =============================-->
+<section>
+  <div class="container"> <div class="space-70-block"></div></div>
+</section>
+<!--==========================================================================-->
+<section class="main-block ">
+  <div class="container">
+    <div class="row " style="align-items:center;">
+
+        <div class="col-md-6 align-col-middle wow fadeIn have-padding" data-wow-delay="0.7s" style="justify-content:center">
+          <div class="" style=" padding:20px; padding-top:50px;">
+            <h3 class="info-titulo1-desc  deg-marine wow fadeIn have-padding" style="margin-bottom:15px;"> Automate your processes and start scaling</h3>
+            <p>Integrate Mati in 5 minutes, and immediately start reducing your operational costs with automation! Opening a new country is a no-brainer with Mati.</p>
+
+          </div>
+        </div>
+        <div class="col-sm-6 wow space-70-top space-70-top fadeIn have-padding" data-wow-delay="0.7s">
+          <img src="site/images/page/comp2.png" class="img-fluid" alt="img13"/>
+        </div>
+    </div>
+  </div>
+</section>
+<!--=============================     Space      =============================-->
+<section>
+  <div class="container"> <div class="space-70-block"></div></div>
+</section>
+<!--================================== INFO ==================================-->
+<!---phone box----->
+<section class="main-block slider-white" style="padding-top: 70px; " >
+  <div class="container">
+    <div class="row" style="align-items:center;">
+        <div class="col-sm-6 wow fadeInLeftmini slow  space-70-top">
+          <img src="site/images/page/man.svg" class="img-fluid" alt="img13"/>
+        </div>
+        <div class="col-md-6 align-col-middle" style="justify-content:center">
+          <div class="" style=" padding:20px; padding-top:50px;">
+            <h3 class="info-titulo1-desc  deg-marine wow fadeIn have-padding" style="text-align:center; font-size: 50px;"> Nebula ID Verification</h3>
+
+             <ul  style=" font-size:25px; margin-bottom:20px; margin-top:50px;">
+               <li class="wow  fadeIn have-padding" data-wow-delay="0.6s">Identity Verification</li>
+               <li class="wow  fadeIn have-padding" data-wow-delay="0.7s">Document Verification</li>
+               <li class="wow  fadeIn have-padding" data-wow-delay="0.8s">Authentication</li>
+               <li class="wow  fadeIn have-padding" data-wow-delay="0.9s">ID Verification</li>
+             </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+<!--================================== INFO ==================================-->
+<!--=============================     Space      =============================-->
+<section style="background: #f9f9f9; ">
+  <div class="container"> <div class="space-70-block"></div></div>
+</section>
+<!--=============================     Space      =============================-->
+<section class="main-block" style="background: #f9f9f9; " >
+  <div class="container">
+    <div class="row " style="align-items:center;">
+
+        <div class="col-md-6 align-col-middle wow fadeIn have-padding" data-wow-delay="0.8s" style="justify-content:center">
+          <div class="" style=" padding:20px; padding-top:50px;">
+            <h3 class="info-titulo1-desc  deg-marine wow fadeIn have-padding" style="margin-bottom:15px;">Cut down fraud on your platform</h3>
+            <p>Implementing a good user verification process can help you cut out frauds by 90%. Time to say bye bye to fraudsters!</p>
+          </div>
+        </div>
+        <div class="col-sm-6 wow  space-70-top fadeIn have-padding" data-wow-delay="0.8s">
+          <img src="site/images/page/grafica.svg" class="img-fluid" alt="img13"/>
+        </div>
+    </div>
+  </div>
+</section>
+<!--=============================     Space      =============================-->
+<section style="background: #f9f9f9; ">
+  <div class="container"> <div class="space-70-block"></div></div>
+</section>
+<!--=============================     Space      =============================-->
+<!--=============================     Space      =============================-->
+<section>
+  <div class="container"> <div class="space-70-block"></div></div>
+</section>
+<!--==========================================================================-->
+<!--================================== INFO ==================================-->
+<!---phone box----->
+<section class="main-block">
+  <div class="container">
+    <div class="row justify-content-center" style="align-items:center;">
+      <div class="styled-heading deg-blue-purple wow  fadeIn have-padding slow" data-wow-delay="0.1s">
+                      <h3 style="text-align: center; "> Main benefits of using Nebula ID Verification</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--col 1-->
+            <div class="col-md-4 justify-content-end">
+              <div class="row" style=" margin:10px;">
+                    <div class="col-md-12  align-col-middle">
+                      <div class="grid" style="text-align:right; padding:0 0 0;">
+
+                            <div class="wow  fadeIn have-padding" data-wow-delay="0.2s" style="margin-top:30px; font-size:18px;">
+                              <p style="font-size: 20px;"> <strong>Desktop & Mobile Solution</strong> </p>
+                              <p>Allows your users to start and end their authentication process in the channel of their choice which reduces dropout rates</p>
+                            </div>
+
+                            <div class="wow  fadeIn have-padding" data-wow-delay="0.3s" style="margin-top:30px; font-size:18px;">
+                              <p style="font-size: 20px;"> <strong>100% Automated Process</strong> </p>
+                              <p>A fully automated business process that requires no decisions on your end. We simply provide a clear Approved/Not Approved response. This reduces your internal fraud risk as well as your cost.</p>
+                            </div>
+
+                            <div class="wow  fadeIn have-padding" data-wow-delay="0.4s" style="margin-top:30px; font-size:18px;">
+                              <p style="font-size: 20px;"> <strong>Identity Verification in Under 60 Seconds</strong> </p>
+                              <p>A fast and frictionless identity verification that drastically reduces dropout rates.</p>
+                            </div>
+
+                            <div class="wow  fadeIn have-padding" data-wow-delay="0.5s" style="margin-top:30px; font-size:18px;">
+                              <p style="font-size: 20px;"> <strong>Helps Prevent Identity Theft and Fraud</strong> </p>
+                              <p>This lowers your risk exposure and fraud-related losses.</p>
+                            </div>
+
+                            <div class="wow  fadeIn have-padding" data-wow-delay="0.6s" style="margin-top:30px; font-size:18px;">
+                              <p style="font-size: 20px;"> <strong>Fully GDPR Compliant</strong> </p>
+                              <p>Certified GDPR compliant and built  with Privacy by Design</p>
+                            </div>
+
+                      </div>
+                    </div>
+              </div>
+            </div>
+      <!--col 2-->
+            <div class="col-md-4 justify-content-center" style="align-items:center">
+              <div  class="row justify-content-center" style="align-items:center;  margin:5px;">
+                    <div class="grid wow  bounceIn have-padding slow" data-wow-delay="0.5s" style="padding:0 0 0;">
+                      <img src="site/images/phone-middle-3.png" class="img-icon img-fluid" alt="img13" style="max-width: 100%;"/>
+                    </div>
+              </div>
+            </div>
+      <!--col 3-->
+      <div class="col-md-4 justify-content-end">
+        <div class="row" style=" margin:10px;">
+              <div class="col-md-12  align-col-middle">
+                <div class="grid" style="text-align:left; padding:0 0 0;">
+
+                      <div class="wow  fadeIn have-padding" data-wow-delay="0.2s" style="margin-top:30px; font-size:18px;">
+                        <p style="font-size: 20px;"> <strong>Easy Integration</strong> </p>
+                        <p>Easy to integrate into your own website, or app, so that users always stay within your brand experience. It’s quick too! We will have you up and running in hours not weeks.</p>
+                      </div>
+
+                      <div class="wow  fadeIn have-padding" data-wow-delay="0.3s" style="margin-top:30px; font-size:18px;">
+                        <p style="font-size: 20px;"> <strong>Perform KYC at Competitive Rates</strong> </p>
+                        <p>Minimizes the need for costly manual intervention without increasing the verification price.</p>
+                      </div>
+
+                      <div class="wow  fadeIn have-padding" data-wow-delay="0.4s" style="margin-top:30px; font-size:18px;">
+                        <p style="font-size: 20px;"> <strong>Near Instant Identity Authentication</strong> </p>
+                        <p>Identity authentication takes under 3 seconds to complete.</p>
+                      </div>
+
+                      <div class="wow  fadeIn have-padding" data-wow-delay="0.5s" style="margin-top:30px; font-size:18px;">
+                        <p style="font-size: 20px;"> <strong>Raises Your Corporate Social Responsibility (CSR) Profile</strong> </p>
+                        <p>Show your customers that you care about their privacy and digital security which translates into increased brand loyalty.</p>
+                      </div>
+
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--==========================================================================-->
+<!--=============================     Space      =============================-->
+<section>
+  <div class="container"> <div class="space-70-block"></div></div>
+</section>
+<!--==========================================================================-->
+<!--=============================   con fondo  ===============================-->
+<section class="main-block slider-big-1">
+  <div class="container">
+      <div class="row seccion-page">
+        <div class="col-md-6 align-col-middle space-70-top">
+          <div class="col-md-12 wow  fadeIn have-padding" style="color:white; justify-content:center">
+              <h3 style="margin-bottom: 50px; font-size: 45px;"> Nebula uses the most advanced technologies </h3>
+
+                      <ul style="font-size:20px; text-align:start">
+                          <p class="wow  fadeIn have-padding" data-wow-delay="0.6s"><img src="site/images/icon/bigdata.svg" alt="" style="width:50px; height:auto; margin-right:15px;"> AI, machine learning and big data</p>
+                          <p class="wow  fadeIn have-padding" data-wow-delay="0.7s"><img src="site/images/icon/computer.svg" alt="" style="width:50px; height:auto; margin-right:15px;"> Computer vision</p>
+                          <p class="wow  fadeIn have-padding" data-wow-delay="0.8s"><img src="site/images/icon/biometrics.svg" alt="" style="width:50px; height:auto; margin-right:15px;"> Face-based biometrics</p>
+                          <p class="wow  fadeIn have-padding" data-wow-delay="0.9s"><img src="site/images/icon/detect.svg" alt="" style="width:50px; height:auto; margin-right:15px;"> Certified liveness detection</p>
+                      </ul>
+        </div>
+        </div>
+        <div class="col-md-6 align-col-middle space-70"><!--poner una imagen sobre otra-->
+              <div  class="img-fluid wow  bounceIn have-padding slow">
+              <IMG SRC="site/images/phone-double.png"class="img-fluid" alt="img13">
+              </div>
+
+              <!--div  class="img-fluid wow  fadeIn have-padding slow" data-wow-delay="0.8s" STYLE="position:absolute; visibility:visible">
+              <IMG SRC="site/images/phone1.png"class="img-fluid" alt="img13">
+              </div>
+              <div  class="img-fluid wow  fadeIn have-padding slow" data-wow-delay="1.5s" STYLE="position:absolute; visibility:visible">
+              <IMG SRC="site/images/phone2.png"class="img-fluid" alt="img13">
+              </div-->
+        </div>
+      </div>
+  </div>
+</section>
+<!--=============================     Space      =============================-->
+<section>
+  <div class="container"> <div class="space-35-block"></div></div>
+</section>
+<!--==========================================================================-->
+<!--==========================================================================-->
+    <section class="main-block">
+      <div class="container">
+        <!---SLIDER BOX----->
+        <div class="row justify-content-center" style="padding-top: 50px;">
+          <div class="col-sm-8 wow fadeIn have-padding align-col-middle">
+            <div class="center-block">
+                    <div class="styled-heading" style="text-align:center; ">
+                          <h3 class="info-titulo1-desc deg-blue-purple">Nebula AI has an intuitive and practical interface very easy to use!</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row find-img-align ">
+              <div class="col-md-12">
+                  <div class="find-place-img_wrap">
+                      <div class="grid" style="padding: 1em 0 1em;">
+          <img src="site/images/page/comp.svg" class="img-icon img-fluid" alt="img13" />
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        <div class="row justify-content-center">
+          <div class="col-sm-3 ">
+                    <div class="" style="text-align:center; color:#ffffff">
+                          <h2 href="#" class="btn btn-outline-light top-btn wow  bounceIn have-padding slow" style="background-color:#1DD2FC; font-weight: bolder; font-size: 1.5rem; text-align: center; margin-top: 20px; margin-bottom: 40px;">Try Now!</h2>
+                          <!--special-button btn btn-outline-light top-btn-->
+                    </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+<!--============================= FOOTER =============================-->
+    <footer class="main-block dark-bg" >
+        <div class="container" style="padding-top: 50px; padding-bottom: 0px;">
+              <div class="row" style="margin-bottom: 15px;">
+
+
+                <div class="col-sm-6" style="vertical-align: middle; display: flex;">
+                  <div class="align-col-middle center-block col-sm-12" >
+
+                                <img class="logo-nav" src="site/images/Nebula-logos/Nebula-logo.png" style="float:left;">
+                                <p class="nav-link copyright" style="color:white; margin: 10px; ">Copyright &copy; 2020 Nebuia. All Rights Reserved.</p>
+                                </div>
+                </div>
+                  <div class="col-sm-2">
+                    <div class="center-block" >
+                      <div class="row">
+                          <ul style="color:#b1b1b1">
+                            <p style="color:#ffffff"><strong>Our Resources</strong></p>
+                            <p>IOTask UI Kit</p>
+                            <p>Cardify UI Kit</p>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="center-block" >
+                      <div class="row">
+                          <ul style="color:#b1b1b1">
+                            <p style="color:#ffffff"><strong>Legal</strong></p>
+                            <p>Privacy Policy</p>
+                            <p>License</p>
+                            <p>About Us</p>
+                            <p>Contact Us</p>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="center-block" >
+                      <div class="row">
+                        <ul style="color:#b1b1b1">
+                          <p style="color:#ffffff"><strong>Follow Us</strong></p>
+                          <p>Facebook</p>
+                          <p>Twitter</p>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+              </div>
+          </div>
+    </footer>
+    <!--//END FOOTER -->
+
+
+
+
+    <!-- jQuery, Bootstrap JS. -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="site/js/jquery-3.2.1.min.js"></script>
+    <script src="site/js/popper.min.js"></script>
+    <script src="site/js/bootstrap.min.js"></script>
+    <script src="site/js/wow.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+            // 100 = The point you would like to fade the nav in.
+
+            if ($(window).scrollTop() > 100) {
+
+                $('.fixed').addClass('is-sticky');
+
+            } else {
+
+                $('.fixed').removeClass('is-sticky');
+
+            };
+        });
+    </script>
+
+    <script>
+	     new WOW().init();
+	  </script>
+
+</body>
+
+</html>
